@@ -13,6 +13,8 @@ To see how the website works, simply click on the [GitHub Pages page of this pro
 
 Additionally, there is a folder called **`project-screenshots`** in the repository, which contains screenshots of the website, so you can see what the site looks like before running it.
 
+If the scale of the website does not fit your screen, you can use the keyboard shortcut **Ctrl + -** to decrease the zoom level and make the website fit better.
+
 ## Author
 
 **Student / Студент ДУІТЗ, ІПЗ 2.02, Туряниця Сергій / Turianytsia Serhii**
