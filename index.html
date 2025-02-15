@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Підключення шрифту для коректного відображення жирності шрифту -->
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Підключення шрифту для коректного відображення жирності шрифту та наклонку -->
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <!-- Підключення шрифту Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>SporePay</title>
+</head>
+<body>
+    <!-- Шапка сайту -->
+    <div class="white-block">
+        <div class="word-1" id="aboutSection">Spore</div>
+        <div class="word-2">Pay</div>
+        <div class="word-3">Головна</div>
+        <div class="word-4">Про банк</div>
+        <div class="word-5">Тг бот</div>
+        <div class="word-6">UA</div>
+        <!-- Кнопка з надписом Увійти -->
+        <div class="rounded-rectangle2" id="loginButton">
+            <span>Увійти</span>
+        </div>
+        <!-- Кнопка з надписом Зареєструватись -->
+        <div class="rounded-rectangle1" id="registerButton">
+            <span>Зареєструватись</span>
+        <div id="content"></div>
+    </div>
+       
+        
+    <!-- Карусель поділена на три групи -->
+    <div class="carousel">
+        <div class="mask">
+            <div class="group active">
+            <!-- Елементи першої групи -->
+              <!-- Ілюстрація банку з елементами -->
+              <div class="icon1_1"></div>
+              <!-- Ілюстрація Spore1 -->
+              <div class="icon1_2"></div>
+              <!-- Ілюстрація Spore2 -->
+              <div class="icon1_3"></div>
+              <!-- Ілюстрація Spore3 -->
+              <div class="icon1_4"></div>
+              <!-- Ілюстрація Spore4 -->
+              <div class="icon1_5"></div>
+              <!-- Ілюстрація Spore5 -->
+              <div class="icon1_6"></div>
+              <!-- Ілюстрація Монета1 -->
+              <div class="icon1_7"></div>
+              <!-- Ілюстрація Монета2 -->
+              <div class="icon1_8"></div>
+              <!-- Ілюстрація Монета3 -->
+              <div class="icon1_9"></div>
+              <!-- Ілюстрація Монета4 -->
+              <div class="icon1_10"></div>
+              <!-- Ілюстрація Монета5 -->
+              <div class="icon1_11"></div>
+              <!-- Надпис головний 1.1 -->
+              <div class="word-1_1">SporePay – ваш фінансовий <br>прорив у майбутнє ! </div>
+              <!-- Надпис головний 1.2 -->
+              <div class="word-1_2">Сучасний і зручний банк: швидке відкриття<br>рахунку, миттєві платежі без комісій, надійний<br>захист і вигідні умови.</div>
+              <!-- Кнопка з надписом Детальніше -->
+              <div class="rounded-rectangle1_1">
+                <span>Детальніше</span></div> 
+            </div>
+                 
+            
+            <div class="group">
+            <!-- Елементи Другої групи -->
+              <!-- Ілюстрація банку з елементами 1 -->
+              <div class="icon2_1"></div>
+              <!-- Іконка 1 на другому блоці -->
+              <div class="icon2_2"></div>
+              <!-- Іконка 2 на другому блоці -->
+              <div class="icon2_3"></div>
+              <!-- Надпис головний на другому блоці -->
+              <div class="word-2_1">SporePay відкриває своє перше відділення! <br>Запрошуємо в команду професіоналів.</div>
+              <!-- Надпис 1 на другому блоці -->
+              <div class="word-2_2">Відкриті вакансії:</div>
+              <!-- Пункти на другому блоці -->
+              <div class="word-2_3">
+                <ul>
+                    <li>Менеджер по роботі з клієнтами</li>
+                    <li>Кредитний менеджер</li>
+                    <li>Касир-операціоніст</li>
+                    <li>Керівник відділення</li>
+                </ul>
+              </div>
+              <!-- Надпис 2 на другому блоці -->
+              <div class="word-2_4">Телефонуйте: +38 (098) 123-45-67 </div>
+              <!-- Надпис 3 на другому блоці -->
+              <div class="word-2_5">Адреса: м. Київ, вул. Васильківська, 45 </div>
+            </div>
+
+
+            <div class="group">
+            <!-- Елементи Третьої групи -->
+              <!-- Ілюстрація банку з елементами  -->
+              <div class="icon3_1"></div>
+              <!-- Надпис головний на третьому блоці -->
+              <div class="word-3_1">Підтримка SporePay завжди поруч!</div>
+              <!-- Надпис 1 на третьому блоці -->
+              <div class="word-3_2">Маєте питання? Відскануйте QR-код та зв’яжіться <br>з нашим Telegram-ботом техпідтримки!</div>
+            </div>
+        </div>
+        
+            <!-- Кнопки для переключеня груп -->
+            <div class="nav-buttons">
+              <button class="prev">&lt;</button>
+              <button class="next" id="nextBtn">&gt;</button>
+            </div>
+        
+            <!-- Овали для відображення активной группы -->
+            <div class="ovals">
+              <div class="oval"></div>
+              <div class="oval"></div>
+              <div class="oval"></div>
+            </div>
+    </div>
+       
+    <script src="join.js"></script>
+
+
+    <!-- Контейнер з розділами(розташований аісля каруселі щоб завжди відобрражався та не перекривався каруселью, CSS розташований до каруселі) -->
+    <div class="container">
+        <div class="block" id="block1">Картки</div>
+        <div class="block" id="block2">Кредити</div>
+        <div class="block" id="block3">Відділення</div>
+        <div class="block" id="block4">Відгуки</div>
+        <div class="block" id="block5">Платежі</div>
+        <div class="block" id="block6">Перекази</div>
+        <div class="block" id="block7">SporePay</div>
+        <div class="block" id="block8">.</div>
+    </div>
+    <!-- Іконка банковської картки -->
+    <div class="icon"></div>
+    <!-- Логотип SporePay сірого кольору -->
+    <div class="icon1"></div>
+    <!-- Голубий блок -->
+    <div id="rectangle"></div>
+        <div class="word-7"> Відкрито нове відділення банку! Запрошуємо в команду фахівців на відкриті вакансії.  +38 (098) 123-45-67</div>
+        <!-- Кнопка з надписом Детальніше на голубому блоці -->
+        <div class="rounded-rectangle" onclick="toggleDetails()">
+          <span>Детальніше</span></div>
+        <!-- Ілюстрація дівчина для голубого блоку -->
+        <div class="icon2"></div>
+
+
+    <!-- Загальний сірий блок -->
+    <div id="gray-block"></div>     
+        <!-- Ілюстрація Пакунку з елементами -->
+        <div class="icon1g"></div>
+        <!-- Фон гурпа еліпс прямокутник  -->
+        <div class="icon2g"></div>
+        <!-- Ілюстрація іконка 1 -->
+        <div class="icon3g"></div>
+        <!-- Ілюстрація іконка 2 -->
+        <div class="icon4g"></div>
+        <!-- Ілюстрація іконка 3 -->
+        <div class="icon5g"></div>
+
+        <!-- Надпис на блоці з пакунком головний -->
+        <div class="word-1g" id="offers">Шопінг із вигодою разом зі</div>
+        <!-- Надпис 2 на блоці з пакунком -->
+        <div class="word-2g"> SporePay</div>
+        <!-- Надпис 3 на блоці з пакунком -->
+        <div class="word-3g"> Купуйте більше – витрачайте менше! З карткою <br>SporePay ви отримуєте кешбек, знижки, бонуси <br>та спеціальні пропозиції у магазинах-партнерах. <br>Робіть покупки вигідно та зручно!</div>
+        <!-- Надпис 4 на блоці з пакунком -->
+        <div class="word-4g"> Що ви отримуєте?</div>
+        <!-- Надпис 5 на блоці з пакунком -->
+        <div class="word-5g"> Кешбек за кожну покупку</div>
+        <!-- Надпис 6 на блоці з пакунком -->
+        <div class="word-6g"> Знижки та бонуси у <br>магазинах-партнерах</div>
+        <!-- Надпис 7 на блоці з пакунком -->
+        <div class="word-7g"> Ексклюзивні акції для <br>власників карт SporePay</div>
+        <!-- Кнопка з надписом Оформити картку на сірому блоці -->
+        <div class="rounded-rectangle4">
+          <span>Оформити картку</span></div>
+        
+
+    <!-- Загальний голубий блок -->
+    <div id="blue-block"></div>  
+        <!-- Ілюстрація телефону -->
+        <div class="icon1b" id="supportSection"></div>
+        <!-- кнопка чат підтримки -->
+        <div class="icon2b"></div>
+
+        <!-- смс 1 -->
+        <div class="sms1b"></div>
+        <!-- смс 2 -->
+        <div class="sms2b"></div>
+
+        <!-- Надпис 1 на блоці смс -->
+        <div class="word-sms1b"> Дякую за вашу швидку <br>підтримку! Завжди <br>приємно мати справу <br>з вашим банком</div>
+        <!-- Надпис 2 на блоці смс -->
+        <div class="word-sms2b"> Раді допомогти!</div>
+
+        <!-- Надпис 1 на блоці блакитному -->
+        <div class="word-1b"> Підтримка клієнті в</div>
+        <!-- Надпис 2 на блоці блакитному -->
+        <div class="word-2b"> SporePay</div>
+        <!-- Надпис 3 на блоці блакитному -->
+        <div class="word-3b"> Допомога завжди поруч !</div>
+        <!-- Надпис 4 на блоці блакитному -->
+        <div class="word-4b"> Виникли питання чи потрібна консультація? <br>Наша служба підтримки завжди готова <br>допомогти! Зв’яжіться з нами в один клік <br>у Telegram або на сайті, і ми швидко <br>вирішимо ваше питання.</div>
+        <!-- Надпис 5 на блоці блакитному -->
+        <div class="word-5b"> Ми працюємо для вашого комфорту, тому <br>відповідаємо оперативно та надаємо <br>детальні роз’яснення щодо всіх послуг. <br>Ваші фінанси та час – у надійних руках!</div>
+        <!-- Надпис 6 на блоці блакитному -->
+        <div class="word-6b"> Натисніть на посилання на бота <br>або відкрийте чат на сайті, щоб <br>отримати миттєву допомогу.</div>
+    
+
+
+    <!-- Блок з карткою 1 -->
+    <div class="cardblock1" id="card1"></div>
+        <!-- Надпис 1 на картці -->
+        <div div class="word-1cb1">FreePay </div>
+        <!-- Надпис 2 на картці -->
+        <div div class="word-2cb1">— картка для щоденних витрат</div>
+        <!-- Надпис 3 на картці -->
+        <div class="word-3cb1">
+         <ul>
+             <li>Безкоштовне обслуговування.</li>
+             <li>Кешбек до 5% на покупки в супермаркетах.</li>
+             <li>Безкоштовні перекази між картками банку.</li>
+             <li>Зняття готівки без комісії в банкоматах.</li>
+         </ul>
+        </div>
+        <!-- Кнопка з надписом Відкрити на синьому блоці -->
+        <div class="rounded-rectangle5">
+          <span>Відкрити</span></div>
+        <!-- Кнопка з надписом Детальніше на сірому блоці -->
+        <div class="rounded-rectangle6">
+          <span>Детальніше</span></div>
+
+
+
+    <!-- Блок з карткою 2 -->
+    <div class="cardblock2" id="card2"></div>
+        <!-- Надпис 1 на картці -->
+        <div div class="word-1cb2">MaxCredit </div>
+        <!-- Надпис 2 на картці -->
+        <div div class="word-2cb2">— кредитна картка </div>
+        <!-- Надпис 3 на картці -->
+        <div class="word-3cb2">
+         <ul>
+             <li>Кредитний ліміт до 200 000 грн.</li>
+             <li>До 62 днів без відсотків на покупки.</li>
+             <li>Кешбек до 10% на розваги та подорожі.</li>
+             <li>Розстрочка до 12 місяців без переплат.</li>
+         </ul>
+        </div>
+        <!-- Кнопка з надписом Відкрити на синьому блоці 3 -->
+        <div class="rounded-rectangle7">
+           <span>Відкрити</span></div>
+        <!-- Кнопка з надписом Детальніше на сірому блоці 4-->
+        <div class="rounded-rectangle8">
+           <span>Детальніше</span></div>
+
+
+
+    <!-- Блок з карткою 3 -->
+    <div class="cardblock3" id="card3"></div>
+        <!-- Надпис 1 на картці -->
+        <div div class="word-1cb3">StartJunior </div>
+        <!-- Надпис 2 на картці -->
+        <div div class="word-2cb3">— картка для дітей і підлітків </div>
+        <!-- Надпис 3 на картці -->
+        <div class="word-3cb3">
+         <ul>
+             <li>Контроль витрат через додаток для батьків.</li>
+             <li>Безкоштовне поповнення з карток батьків.</li>
+             <li>Кешбек 3% на розваги та ігри.</li>
+             <li>Дизайн картки з можливістю кастомізації.</li>
+         </ul>
+        </div>
+        <!-- Кнопка з надписом Відкрити на синьому блоці 5 -->
+        <div class="rounded-rectangle9">
+           <span>Відкрити</span></div>
+        <!-- Кнопка з надписом Детальніше на сірому блоці 6-->
+        <div class="rounded-rectangle11">
+           <span>Детальніше</span></div>
+
+
+
+    <!-- Сірий footer -->
+    <div class="icon1f"></div>
+        <!-- Надпис 1 на сірому footer -->
+        <div class="word-1f" onclick="scrollToElement('aboutSection')">Про нас</div>
+        <!-- Надпис 2 на сірому footer-->
+        <div class="word-2f" onclick="scrollToElement('aboutSection')">Про банк</div>
+        <!-- Надпис 3 на сірому footer -->
+        <script>
+          function scrollToElement(elementId) {
+              document.getElementById(elementId).scrollIntoView({ behavior: "smooth" });
+          }
+        </script>
+          
+        <div div class="word-3f">Контакти</div>
+        <!-- Надпис 4 на сірому footer -->
+        <div div class="word-4f">Партнери</div>
+          
+        <!-- Надпис 5 на сірому footer -->
+        <div div class="word-5f" onclick="scrollToElement('offers')">Спеціальні пропозиції</div>
+        <!-- Надпис 6 на сірому footer -->
+        <div div class="word-6f" onclick="scrollToElement('offers')">Кешбек та бонуси</div>
+        <!-- Надпис 7 на сірому footer -->
+        <div div class="word-7f" onclick="scrollToElement('offers')">Знижки</div>
+        <!-- Надпис 8 на сірому footer -->
+        <div div class="word-8f" onclick="scrollToElement('offers')">Ексклюзивні акції</div>
+        <script>
+          function scrollToElement(elementId) {
+              document.getElementById(elementId).scrollIntoView({ behavior: "smooth" });
+          }
+        </script>
+
+
+        <!-- Надпис 9 на сірому footer -->
+        <div class="word-9f" onclick="scrollToElement('supportSection')">Підтримка онлайн</div>
+        <!-- Надпис 10 на сірому footer -->
+        <div class="word-10f" onclick="scrollToElement('supportSection')">Чат з оператором</div>
+        <!-- Надпис 11 на сірому footer -->
+        <div class="word-11f" onclick="scrollToElement('supportSection')">Тг бот</div>
+        <!-- Надпис 12 на сірому footer -->
+        <div class="word-12f" onclick="scrollToElement('supportSection')">Контакти</div>
+        <script>
+          function scrollToElement(elementId) {
+              document.getElementById(elementId).scrollIntoView({ behavior: "smooth" });
+          }
+        </script>
+
+        <!-- Надпис 13 на сірому footer -->
+        <div class="word-13f" onclick="scrollToElement('card1')">Банківські картки</div>
+        <!-- Надпис 14 на сірому footer -->
+        <div class="word-14f" onclick="scrollToElement('card1')">Дебетова картка</div>
+        <!-- Надпис 15 на сірому footer -->
+        <div class="word-15f" onclick="scrollToElement('card3')">Юніор картка</div>
+        <!-- Надпис 16 на сірому footer -->
+        <div class="word-16f" onclick="scrollToElement('card2')">Кредитна картка</div>
+        <script>
+          function scrollToElement(elementId) {
+              document.getElementById(elementId).scrollIntoView({ behavior: "smooth" });
+          }
+        </script>
+
+
+        <!-- Надпис 17 на сірому footer -->
+        <div class="word-17f" onclick="scrollToElement('loginButton')">Вхід/Реєстрація</div>
+        <!-- Надпис 18 на сірому footer -->
+        <div class="word-18f" onclick="scrollToElement('loginButton')">Авторизація</div>
+        <!-- Надпис 19 на сірому footer -->
+        <div class="word-19f" onclick="scrollToElement('registerButton')">Створити акаунт</div>
+        <script>
+          function scrollToElement(elementId) {
+              document.getElementById(elementId).scrollIntoView({ behavior: "smooth" });
+          }
+        </script>
+
+
+        <!-- Телефон footer -->
+        <div class="icon2f"></div>  
+        <!-- Номер 20.1 на сірому footer -->
+        <div div class="word-20f">2300</div>
+        <!-- Надпис 21 на сірому footer -->
+        <div div class="word-21f">безкоштовно з мобільного</div>
+           
+
+        <!-- Global footer -->
+        <div class="icon3f"></div>  
+        <!-- Номер 22.2 на сірому footer -->
+        <div div class="word-22f">+38 067 212 22 23</div>
+        <!-- Надпис 23 на сірому footer -->
+        <div div class="word-23f">для дзвінків із-за кордону/зі <br>стаціонарних телефонів</div>
+           
+        <!-- Лінія footer -->
+        <div class="icon4f"></div>  
+        <!-- Питання footer -->
+        <div class="icon5f"></div>  
+        <!-- Надпис 24 на сірому footer -->
+        <div div class="word-24f">Питання та пропозиції</div>
+        <div class="rounded-rectangle10">
+          <span>Написати</span></div>
+           
+        <!-- Надпис 25 на сірому footer -->
+        <div div class="word-25f">© 2025 SporePay Ліцензія № 22 від 11.02.2025</div>
+        <!-- YouTube на сірому footer -->
+        <div class="icon6f"></div>  
+        <!-- Instgram на сірому footer -->
+        <div class="icon7f"></div>  
+        <!-- Facebook на сірому footer -->
+        <div class="icon8f"></div>  
+        <!-- Надпис UA на сірому footer -->
+        <div div class="word-26f">UA</div>
+
+</body>
+</html>

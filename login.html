@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма входу</title>
+    <link rel="stylesheet" href="login.css"> <!-- Підключення стилів -->
+    <!-- Підключення шрифту для коректного відображення жирності шрифту -->
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Підключення шрифту для коректного відображення жирності шрифту та наклонку -->
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Контейнер для форми -->
+  <div class="form-container">
+    <h2 id="form-title">SporePay</h2>
+    <form>
+        <div class="input-container1">
+            <input type="text" id="email" placeholder="Електронна пошта" required>
+        </div>
+        <div class="input-container2">
+            <input type="password" id="password" placeholder="Пароль" required>
+        </div>
+
+        <button type="submit" id="submit-btn">Увійти</button>
+    </form>
+
+    <p class="small-text" id="register-text">Ще не маєш акаунта? <a href="#" id="register-link">Зареєструватися</a></p>
+    <!-- Spore логотип 1 -->
+    <div class="icon1l"></div>
+    <!-- Spore логотип 2 -->
+    <div class="icon2l"></div>
+    <div class="language-toggle">
+        <button onclick="toggleLanguage()">Change Language</button>
+    </div>
+    <div class="custom-line"></div>
+    <div class="custom-line1"></div>
+</div>
+
+<!-- Підключеня зовнішнього JavaScript файлу -->
+<script src="login.js"></script> 
+
+</body>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Успішна реєстрація!</h2>
+        <p>Вхід або реєстрація пройшли успішно!</p>
+        <p>Щоб зберегти вхід, натисніть "Зберегти" в браузері.</p>
+    </div>
+</div>
+
+</html>

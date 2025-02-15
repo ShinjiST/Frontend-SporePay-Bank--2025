@@ -1,0 +1,260 @@
+/* Загальний стиль для body */
+body {
+    font-family: 'Ysabeau Infant', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Контейнер для форми з фіксованими розмірами */
+.form-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 600px;  /* Ширина контейнера */
+    height: 900px; /* Висота контейнера */
+    text-align: center;
+    position: relative; /* Додаємо relative для позиціонування дочірніх елементів */
+    transform: scale(0);
+    animation: formAnimation 0.6s forwards; /* Анімація */
+}
+
+/* Анімація для появи форми */
+@keyframes formAnimation {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Заголовок */
+.form-container h2 {
+    font-family: 'Fugaz One', sans-serif; /* Шрифт */
+    font-size: 70px;
+    color: #3852B9;
+    margin-bottom: 20px;
+    position: relative; /* Додаємо позиціонування */
+    left: 60px; /* Зміщуємо вліво */
+    top: -15px; /* Зміщуємо вгору */
+}
+
+.input-container1, .input-container2, .input-container3 {
+    position: absolute; /* Абсолютне позиціонування */
+    width: 420px; /* Ширина поля введення */
+    height: 50px; /* Висота поля введення */
+    left: 305px; /* Позиція відносно центру по горизонталі */
+    transform: translateX(-50%); /* Зміщення по горизонталі для точного центрування */
+}
+
+/* Контейнер для логіна */
+.input-container1 {
+    top: 26%; /* Позиція по вертикалі для поля логіна */
+}
+
+/* Контейнер для електронної пошти */
+.input-container2 {
+    top: calc(26% + 105px); /* Позиція по вертикалі для поля електронної пошти */
+}
+
+/* Контейнер для пароля */
+.input-container3 {
+    top: calc(26% + 210px); /* Позиція по вертикалі для поля пароля */
+}
+
+/* Стиль для input */
+.input-container1 input, .input-container2 input, .input-container3 input {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    font-size: 25px;
+    transition: border-color 0.3s;
+}
+
+/* Фокус на input */
+.input-container1 input:focus, .input-container2 input:focus, .input-container3 input:focus {
+    border-color: #3852B9;
+    outline: none;
+}
+
+/* Кнопка відправки */ 
+button {
+    width: 460px; /* Фіксована ширина кнопки */
+    height: 50px; /* Фіксована висота кнопки */
+    position: absolute; /* Абсолютне позиціонування */
+    top: calc(43% + 200px); /* Розташування по вертикалі */
+    left: 50%; /* Центрування по горизонталі */
+    transform: translateX(-50%); /* Центрування по осі X */
+    background-color: #3852B9; /* Колір фону */
+    color: #ffffff; /* Колір тексту */
+    border: none; /* Видаляємо рамку */
+    border-radius: 50px; /* Закруглені кути */
+    font-size: 30px; /* Розмір шрифту */
+    cursor: pointer; /* Вказівник при наведенні */
+    transition: background-color 0.3s; /* Плавна зміна кольору фону */
+}
+
+/* Кнопка при наведенні */
+button:hover {
+    background-color: #2c4399;
+}
+
+/* Маленький текст для посилання */
+.small-text {
+    font-size: 25px;
+    color: #666;
+    position: absolute; /* Абсолютне позиціонування */
+    top: 540px; /* Координата по вертикалі (у пікселях) */
+    left: 50%; /* Центрування по горизонталі */
+    transform: translateX(-50%); /* Центрує елемент по осі X */
+    margin-top: 15px;
+    white-space: nowrap; /* Забороняє перенесення тексту */
+}
+
+.small-text a {
+    color: #3852B9;
+    text-decoration: none;
+}
+
+/* Ефект при наведенні на посилання */
+.small-text a:hover {
+    text-decoration: underline;
+}
+
+/* Spore логотип 1 */
+.icon1l {
+    width: 148px; /* Ширина блоку */
+    height: 148px; /* Висота блоку */
+    background-image: url('images/icon1l.svg'); /* Шлях до SVG */
+    background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блоку */
+    background-repeat: no-repeat; /* Забороняє повторення SVG */
+    position: absolute; /* Позиціонуємо зображення відносно батьківського блоку */
+    left: 82px; /* Позиція по осі X відносно батька (у пікселях) */
+    top: 50px; /* Позиція по осі Y відносно батька (у пікселях) */
+}
+
+/* Стилі для кнопки зміни мови з анімацією */
+.language-toggle {
+    position: absolute;
+    top: 620px;  /* Розташування кнопки відносно верху .form-container */
+    left: 330px; /* Розташування кнопки відносно лівого краю .form-container */
+    font-size: 16px;
+    opacity: 0; /* Приховати кнопку при завантаженні */
+}
+
+.language-toggle.show {
+    animation: fadeIn 0.5s forwards; /* Анімація появи кнопки */
+}
+
+/* Анімація для кнопки */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.language-toggle button {
+    background-color: #3852B9;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.language-toggle button:hover {
+    background-color: #ffffff;
+    color: #3852B9;
+}
+
+/* Spore логотип 2 */
+.icon2l {
+    width: 80px; /* Ширина блоку */
+    height: 80px; /* Висота блоку */
+    background-image: url('images/icon2l.svg'); /* Шлях до SVG */
+    background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блоку */
+    background-repeat: no-repeat; /* Забороняє повторення SVG */
+    position: absolute; /* Позиціонуємо зображення відносно батьківського блоку */
+    left: 292px; /* Позиція по осі X відносно батька (у пікселях) */
+    top: 700px; /* Позиція по осі Y відносно батька (у пікселях) */
+}
+
+/* Користувацька лінія 1 */
+.custom-line {
+    position: absolute; /* Дозволяє керувати top та left */
+    top: 739px;  /* Розташування зверху */
+    left: 0px; /* Розташування зліва */
+    width: 40%; /* Довжина лінії */
+    height: 2px; /* Товщина лінії */
+    background-color: rgb(213, 213, 213); /* Колір лінії */
+}
+
+/* Користувацька лінія 2 */
+.custom-line1 {
+    position: absolute; /* Дозволяє керувати top та left */
+    top: 739px;  /* Розташування зверху */
+    left: 396px; /* Розташування зліва */
+    width: 40%; /* Довжина лінії */
+    height: 2px; /* Товщина лінії */
+    background-color: rgb(213, 213, 213); /* Колір лінії */
+}
+
+/* Стиль для модального вікна */
+.modal {
+    display: none; /* Ініціально вікно приховане */
+    position: fixed;
+    top: 20px; /* Відступ зверху */
+    right: 20px; /* Відступ з правого боку */
+    width: 300px; /* Ширина вікна */
+    background-color: rgba(0, 0, 0, 0.8); /* Напівпрозорий фон */
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Світла тінь */
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-20px); /* Початкова позиція трохи вище */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Плавна анімація */
+}
+
+/* Стиль для вмісту модального вікна */
+.modal-content {
+    text-align: left;
+}
+
+/* Хрестик для закриття */
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #3852B9;
+}
+
+/* Клас для показу модального вікна */
+.modal.show {
+    display: block; /* Зробити видимим */
+    opacity: 1; /* Повна непрозорість */
+    transform: translateY(0); 
+}

@@ -1,0 +1,2560 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f0f0f0; /* Колір фону для контрасту */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Прив'язка блока до верхньої частини */
+}
+
+/* Формування головного білого блоку */
+.white-block {
+  width: 1891px;
+  height: 164px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Невелика тінь на нижній грані */
+  margin-top: 0px; /* Якщо потрібно невелике відстань від верхнього краю */
+  position: absolute;
+
+  /* Картинка логотипу банку Spore */
+  background-image: url('images/logo.png');
+  /* Контроль розміру зображення */
+  background-size: 148px 148px; /* Вкажіть розміри в пікселях, наприклад, 300x300 пікселів */
+  /* Контроль розташування зображення */
+  background-position: 174px 16px; /* Зображення буде розташоване на 100px ліворуч і 50px зверху від блоку */
+  background-repeat: no-repeat; /* Щоб зображення не повторювалося */
+}
+
+/* Слово 1 */
+.word-1 {
+  font-family: 'Fugaz One', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 64px; /* Розмір шрифта */
+  position: absolute;
+  top: 40px;
+  left: 322px;
+}
+
+/* Слово 2 */
+.word-2 {
+  font-family: 'Fugaz One', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирність шрифта для слова 2 */
+  color: #3852B9; /* Колір тексту для слова 2 */
+  letter-spacing: 0px; /* Відстань між буквами для слова 2 */
+  font-size: 64px; /* Розмір шрифта для слова 2 */
+  position: absolute;
+  top: 40px;
+  left: 506px;
+}
+
+/* Слово 3 */
+.word-3 {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 200; /* Жирність шрифта для слова 3 */
+  color: #000000; /* Колір тексту для слова 3 */
+  letter-spacing: 0px; /* Відстань між буквами для слова 3 */
+  font-size: 36px; /* Розмір шрифта для слова 3 */
+  position: absolute;
+  top: 64px;
+  left: 737px;
+}
+
+/* Слово 4 */
+.word-4 {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 200; /* Жирність шрифта для слова 4 */
+  color: #414141; /* Колір тексту для слова 4 */
+  letter-spacing: 0px; /* Відстань між буквами для слова 4 */
+  font-size: 36px; /* Розмір шрифта для слова 4 */
+  position: absolute;
+  top: 64px;
+  left: 908px;
+}
+
+/* Слово 5 */
+.word-5 {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 200; /* Жирність шрифта для слова 5 */
+  color: #414141; /* Колір тексту для слова 5 */
+  letter-spacing: 0px; /* Відстань між буквами для слова 5 */
+  font-size: 36px; /* Розмір шрифта для слова 5 */
+  position: absolute;
+  top: 64px;
+  left: 1094px;
+}
+
+/* Слово 6 */
+.word-6 {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 200; /* Жирність шрифта для слова 6 */
+  color: #414141; /* Колір тексту для слова 6 */
+  letter-spacing: 0px; /* Відстань між буквами для слова 6 */
+  font-size: 36px; /* Розмір шрифта для слова 6 */
+  position: absolute;
+  top: 64px;
+  left: 1228px;
+}
+
+/* Фігура для кнопки - Увійти. Прямокутник з округлими кутами */
+.rounded-rectangle2 {
+  position: absolute; /* Використовуємо абсолютне позиціонування для зміни розташування */
+  width: 140px; /* Ширина прямокутника */
+  height: 62px; /* Висота прямокутника */
+  background-color: #3852B9; /* Колір фону */
+  border-radius: 50px; /* Закруглення кутів до кіл */
+  top: 58px; /* Розташування по вертикалі (можна змінювати) */
+  left: 1305px; /* Розташування по горизонталі (можна змінювати) */
+  display: flex; /* Для вирівнювання тексту по центру */
+  justify-content: center; /* Центруємо текст по горизонталі */
+  align-items: center; /* Центруємо текст по вертикалі */
+  transition: background-color 0.3s, color 0.3s; /* Плавний перехід для фону та тексту */
+  cursor: pointer; /* Змінюємо курсор на вказівник */
+}
+
+/* Текст для кнопки з написом - Увійти */
+.rounded-rectangle2 span {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 200; /* Жирність шрифту */
+  color: #ffffff; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 36px; /* Розмір шрифту */
+  top: 0px; /* Розташування тексту по вертикалі */
+  left: 0px; /* Розташування тексту по горизонталі */
+}
+
+/* Анімація при наведені */
+.rounded-rectangle2:hover {
+  background-color: #ffffff; /* Колір фону при наведені */
+}
+
+.rounded-rectangle2:hover span {
+  color: #3852B9; /* Колір тексту при наведені */
+}
+
+/* Фігура для кнопки - Зареєструватися. Прямокутник з округлими кутами */
+.rounded-rectangle1 {
+  position: absolute; /* Використовуємо абсолютне позиціонування для зміни розташування */
+  width: 275px; /* Ширина прямокутника */
+  height: 62px; /* Висота прямокутника */
+  background-color: #3852B9; /* Колір фону */
+  border-radius: 50px; /* Закруглення кутів до кіл */
+  top: 58px; /* Розташування по вертикалі (можна змінювати) */
+  left: 1463px; /* Розташування по горизонталі (можна змінювати) */
+  display: flex; /* Для вирівнювання тексту по центру */
+  justify-content: center; /* Центруємо текст по горизонталі */
+  align-items: center; /* Центруємо текст по вертикалі */
+  transition: background-color 0.3s, color 0.3s; /* Плавний перехід для фону та тексту */
+  cursor: pointer; /* Змінюємо курсор на вказівник */
+}
+
+/* Текст для кнопки з написом - Зареєструватися */
+.rounded-rectangle1 span {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 200; /* Жирність шрифту */
+  color: #ffffff; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 36px; /* Розмір шрифту */
+  top: 0px; /* Розташування тексту по вертикалі */
+  left: 0px; /* Розташування тексту по горизонталі */
+}
+
+/* Анімація при наведені */
+.rounded-rectangle1:hover {
+  background-color: #ffffff; /* Колір фону при наведені */
+}
+
+.rounded-rectangle1:hover span {
+  color: #3852B9; /* Колір тексту при наведені */
+}
+
+/* Стиль для контенту */
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Висота контенту на всю висоту екрану */
+}
+
+
+/* Контейнер з розділами */
+.container, .container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Ysabeau Infant, sans-serif;
+  }
+  
+  /* Контейнер, в якому знаходяться всі блоки */
+.container {
+  position: relative; /* Використовуємо відносне позиціонування для контейнера */
+  width: 1560px; /* Ширина контейнера */
+  height: 124px; /* Висота контейнера */
+  top: 196px; /* Розташування по вертикалі */
+  left: 182px; /* Розташування по горизонталі */
+  border: 2px FFFFFF; /* Біла обводка (можливо, треба змінити на rgba(255, 255, 255, 1) або інший колір) */
+  display: flex; /* Використовуємо flex для вбудовування елементів по рядку */
+  position: absolute; /* Абсолютне позиціонування для контролю над розташуванням */
+  border-radius: 20px; /* Округлення всіх кутів контейнера */
+  overflow: hidden; /* Забороняємо елементам виходити за межі контейнера */
+}
+
+/* Стиль для окремих блоків всередині контейнера */
+.block {
+  display: flex; /* Вирівнюємо елементи по горизонталі та вертикалі */
+  align-items: center; /* Центруємо по вертикалі */
+  justify-content: center; /* Центруємо по горизонталі */
+  background-color: rgb(255, 255, 255); /* Білий фон */
+  border-left: 2px solid rgb(181, 181, 181); /* Лівий бордер для всіх блоків, окрім першого */
+  cursor: pointer; /* Змінюємо курсор на вказівник при наведенні */
+  transition: 0.3s ease; /* Плавний перехід для всіх стилів */
+  height: 100%; /* Висота блоку дорівнює висоті контейнера */
+  padding: 0 15px; /* Відступи по горизонталі */
+  text-align: center; /* Центруємо текст по горизонталі */
+  user-select: none; /* Забороняємо виділення тексту */
+  outline: none; /* Вимикаємо обведення при фокусі */
+}
+
+/* Видаляємо ліву межу у першого блоку */
+.block:first-child {
+  border-left: none;
+}
+
+/* Загальні стилі для шрифтів */
+.block {
+  font-size: 31px; /* Розмір шрифта за замовчуванням */
+  font-family: "Ysabeau Infant", sans-serif; /* Шрифт за замовчуванням */
+}
+
+/* Унікальні стилі для кожного блоку */
+#block1 {
+  width: 182px; /* Ширина першого блоку */
+  border-top-left-radius: 10px; /* Закруглений верхній лівий кут */
+}
+
+#block2 {
+  width: 203px; /* Ширина другого блоку */
+}
+
+#block3 {
+  width: 210px; /* Ширина третього блоку */
+}
+
+#block4 {
+  width: 182px; /* Ширина четвертого блоку */
+}
+
+#block5 {
+  width: 191px; /* Ширина п'ятого блоку */
+}
+
+#block6 {
+  width: 209px; /* Ширина шостого блоку */
+}
+
+#block7 {
+  width: 268px; /* Ширина сьомого блоку */
+  color: #3852B9; /* Колір тексту для сьомого блоку */
+  padding-right: 72px; /* Відступ справа для сьомого блоку */
+}
+
+#block8 {
+  width: 110px; /* Ширина восьмого блоку */
+  border-top-right-radius: 10px; /* Закруглений верхній правий кут */
+}
+
+/* Іконка банковської картки */
+.icon {
+  width: 50px; /* Ширина блоку */
+  height: 35px; /* Висота блоку */
+  background-image: url('images/icon.svg'); /* Шлях до SVG іконки */
+  background-size: contain; /* Масштабує SVG, щоб воно не виходило за межі блоку */
+  background-repeat: no-repeat; /* Запобігає повторенню SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 1532px; /* Позиція по осі X */
+  top: 244px; /* Позиція по осі Y */
+}
+
+/* Логотип SporePay сірого кольору */
+.icon1 {
+  width: 100px; /* Ширина блоку */
+  height: 100px; /* Висота блоку */
+  background-image: url('images/icon1.svg'); /* Шлях до SVG логотипу */
+  background-size: contain; /* Масштабує SVG, щоб воно не виходило за межі блоку */
+  background-repeat: no-repeat; /* Запобігає повторенню SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 1634px; /* Позиція по осі X */
+  top: 210px; /* Позиція по осі Y */
+}
+
+/* Голубий блок */
+#rectangle {
+  position: absolute; /* Для точного позиціонування */
+  top: 308px; /* Координата Y */
+  left: 182px; /* Координата X */
+  width: 1555px; /* Ширина */
+  height: 80px; /* Висота */
+  background-color: #94A8F6; /* Колір */
+  border-radius: 0 0 20px 20px; /* Закруглення нижніх кутів */
+
+  /* Тінь: верхня та нижня грань */
+  box-shadow: 
+  0 -5px 10px rgba(0, 0, 0, 0.08), /* Тінь на верхній грані */
+  0 5px 10px rgba(0, 0, 0, 0.08);  /* Тінь на нижній грані */
+}
+
+/* Слово 7 (речення) */
+.word-7 {
+    font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+    font-weight: 700; /* Жирність шрифта */
+    color: #000000; /* Колір тексту */
+    letter-spacing: 0px; /* Відстань між літерами */
+    font-size: 26px; /* Розмір шрифта */
+    position: absolute;
+    top: 330px;
+    left: 197px;
+}
+
+/* Фігура для кнопки - Детальніше. Прямокутник з круглими кінцями */
+.rounded-rectangle {
+    position: absolute; /* Використання абсолютного позиціонування для зміни розташування */
+    width: 171px; /* Ширина прямокутника */
+    height: 41px; /* Висота прямокутника */
+    background-color: #94A8F6; /* Колір фону */
+    border-radius: 50px; /* Закруглення кутів до кіл */
+    top: 326px; /* Розташування по вертикалі */
+    left: 1426px; /* Розташування по горизонталі */
+    display: flex; /* Для вирівнювання тексту по центру */
+    justify-content: center; /* Центруємо текст по горизонталі */
+    align-items: center; /* Центруємо текст по вертикалі */
+    transition: background-color 0.3s, color 0.3s; /* Плавний перехід для фону та тексту */
+    cursor: pointer; /* Зміна курсору на вказівник */
+    border: 2px solid #000000; /* Кольорова межа (товщина 2px, колір #000000) */
+}
+
+/* Текст для кнопки з написом - Детальніше */
+.rounded-rectangle span {
+    font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+    font-weight: 200; /* Жирність шрифта */
+    color: #000000; /* Колір тексту */
+    letter-spacing: 0px; /* Відстань між літерами */
+    font-size: 26px; /* Розмір шрифта */
+}
+
+/* Анімація при наведенні */
+.rounded-rectangle:hover {
+    background-color: #ffffff; /* Колір фону при наведенні */
+}
+
+.rounded-rectangle:hover span {
+    color: #3852B9; /* Колір тексту при наведенні */
+}
+
+/* Налаштування ілюстрації з дівчиною */
+.icon2 {
+    width: 133px; /* Ширина блоку */
+    height: 133px; /* Висота блоку */
+    background-image: url('images/icon2.svg'); /* Шлях до SVG */
+    background-size: contain; /* Масштабує SVG, щоб воно не виходило за межі блоку */
+    background-repeat: no-repeat; /* Запобігає повторенню SVG */
+    position: absolute; /* Дозволяє точно позиціонувати блок */
+    left: 1598px; /* Позиція по осі X */
+    top: 282px; /* Позиція по осі Y */
+}
+
+
+/* Стилі загальні для каруселі */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Контейнер для каруселі */
+.carousel {
+  position: absolute;
+  top: 166px;
+  left: 0px;
+  width: 1891px;
+  height: 920px;
+  background-color: #f0f0f0;
+  border-radius: 0px;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Маска для скриття елементів */
+.mask {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+/* Групи */
+.group {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.group.active {
+  display: flex;
+}
+
+/* Кнопки */
+.nav-buttons button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 880px;
+  background: rgba(128, 128, 128, 0.3);
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 2em;
+  padding: 5px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background 0.3s ease;
+  border-radius: 10px;
+}
+
+.prev {
+  left: 830px;
+}
+
+.next {
+  right: 830px;
+}
+
+.nav-buttons button:hover {
+  background: rgba(48, 48, 48, 0.6);
+}
+
+/* Овали */
+.ovals {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.oval {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: lightgray;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.oval.active {
+  background-color: rgb(125, 125, 125);
+}
+
+/* Анимація для елементів кнопок */
+.carousel .group > * {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel .group.active > * {
+  opacity: 1;
+}
+
+/* Анімація для елементів появлення картинок або ілюстрацій (для усіх у першій групі карусель) */
+@keyframes fadeInZoom {
+  0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Анімація для тексту появлення (для усього тексту у першій групі карусель) */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}  
+
+/*  Елементи першої групи */
+/* Налаштування ілюстрації банку з елементами */
+.icon1_1 {
+  width: 672px; /* Ширина блока */
+  height: 672px; /* Висота блока */
+  background-image: url('carousel1-images/icon1_1.svg'); /* Путь к SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 1111px; /* Позиція по осі X */
+  top: 180px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Налаштування ілюстрації Spore1 */
+.icon1_2 {
+  width: 59.7px; /* Ширина блока */
+  height: 59.54px; /* Висота блока */
+  background-image: url('carousel1-images/icon1_2.svg'); /* Путь к SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 1660px; /* Позиція по осі X */
+  top: 234px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Налаштування ілюстрації Spore2 */
+.icon1_3 {
+  width: 141.64px; /* Ширина блока */
+  height: 141.24px; /* Висота блока */
+  background-image: url('carousel1-images/icon1_3.svg'); /* Путь к SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 1000px; /* Позиція по осі X */
+  top: 379px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Налаштування ілюстрації Spore3 */
+.icon1_4 {
+  width: 95.79px; /* Ширина блока */
+  height: 95.52px; /* Висота блока */
+  background-image: url('carousel1-images/icon1_4.svg'); /* Путь к SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 1090px; /* Позиція по осі X */
+  top: 762px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Налаштування ілюстрації Spore4 */
+.icon1_5 {
+  width: 397px; /* Ширина блока */
+  height: 397px; /* Висота блока */
+  background-image: url('carousel1-images/icon1_5.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 1285px; /* Позиція по осі X */
+  top: 790px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Налаштування ілюстрації Spore5 */
+.icon1_6 {
+  width: 888px; /* Ширина блока */
+  height: 888px; /* Висота блока */
+  background-image: url('carousel1-images/icon1_6.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 100px; /* Позиція по осі X */
+  top: 740px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Налаштування ілюстрації Монета1 */
+.icon1_7 {
+  width: 275px; /* Ширина блока */
+  height: 275px; /* Висота блока */
+  background-image: url('carousel1-images/icon1_7.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 817px; /* Позиція по осі X */
+  top: 506px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Налаштування ілюстрації Монета2 */
+.icon1_8 {
+  width: 125px; /* Ширина блока */
+  height: 125px; /* Висота блока */
+  background-image: url('carousel1-images/icon1_8.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 664px; /* Позиція по осі X */
+  top: 614px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Налаштування ілюстрації Монета3 */
+.icon1_9 {
+  width: 95px; /* Ширина блока */
+  height: 95px; /* Висота блока */
+  background-image: url('carousel1-images/icon1_9.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 175px; /* Позиція по осі X */
+  top: 654px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Налаштування ілюстрації Монета4 */
+.icon1_10 {
+  width: 140px; /* Ширина блока */
+  height: 140px; /* Висота блока */
+  background-image: url('carousel1-images/icon1_10.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 579px; /* Позиція по осі X */
+  top: 494px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Налаштування ілюстрації Монета5 */
+.icon1_11 {
+  width: 205px; /* Ширина блока */
+  height: 167px; /* Висота блока */
+  background-image: url('carousel1-images/icon1_11.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 390px; /* Позиція по осі X */
+  top: 654px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Слово 1 (речення 1 на першому блоці каруселі) */
+.word-1_1 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 900; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 84px; /* Розмір шрифта */
+  position: absolute;
+  top: 242px;
+  left: 222px;
+  line-height: 70px; /* Відстань між рядками */
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Слово 2 (речення 2 на першому блоці каруселі) */
+.word-1_2 {
+font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+font-weight: 450; /* Жирність шрифта */
+color: #000000; /* Колір тексту */
+letter-spacing: 0px; /* Відстань між буквами */
+font-size: 36px; /* Розмір шрифта */
+position: absolute;
+top: 414px;
+left: 222px;
+line-height: 38px; /* Відстань між рядками */
+animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Фігура для кнопки - Детальніше. Прямокутник з круглими кутами */
+.rounded-rectangle1_1 {
+position: absolute; /* Використання абсолютного позиціювання для зміни розташування */
+width: 289px; /* Ширина прямокутника */
+height: 71px; /* Висота прямокутника */
+background-color: #3852B9; /* Колір фону */
+border-radius: 10px; /* Закруглення кутів до кругів */
+top: 550px; /* Розташування по вертикалі (можна змінювати) */
+left: 220px; /* Розташування по горизонталі (можна змінювати) */
+display: flex; /* Для вирівнювання тексту по центру */
+justify-content: center; /* Центруємо текст по горизонталі */
+align-items: center; /* Центруємо текст по вертикалі */
+transition: background-color 0.3s, color 0.3s; /* Плавний перехід для фону і тексту */
+cursor: pointer; /* Зміна курсору на вказівник */
+animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Текст для кнопки з надписом - Детальніше */
+.rounded-rectangle1_1 span {
+font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+font-weight: 600; /* Жирність шрифта */
+color: #ffffff; /* Колір тексту */
+letter-spacing: 0px; /* Відстань між буквами */
+font-size: 40px; /* Розмір шрифта */
+top: 0px; /* Розташування тексту по вертикалі */
+left: 0px; /* Розташування тексту по горизонталі */
+transition: color 0.3s ease-in-out;
+}
+
+/* Анімація при наведенні */
+.rounded-rectangle1_1:hover {
+background-color: #ffffff; /* Колір фону при наведенні */
+}
+
+.rounded-rectangle1_1:hover span {
+color: #3852B9; /* Колір тексту при наведенні */
+}
+
+
+/*  Елементи другої групи */
+/* Налаштування ілюстрації у другому блоці з елементами */
+.icon2_1 {
+  width: 1562px; /* Ширина блоку */
+  height: 647px; /* Висота блоку */
+  background-image: url('carousel2-images/icon2_1.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 195px; /* Позиція по осі X */
+  top: 270px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Налаштування Іконки 1 на другому блоці */
+.icon2_2 {
+  width: 70px; /* Ширина блоку */
+  height: 70px; /* Висота блоку */
+  background-image: url('carousel2-images/icon2_2.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 220px; /* Позиція по осі X */
+  top: 650px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Налаштування Іконки 2 на другому блоці */
+.icon2_3 {
+  width: 70px; /* Ширина блоку */
+  height: 70px; /* Висота блоку */
+  background-image: url('carousel2-images/icon2_3.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 220px; /* Позиція по осі X */
+  top: 750px; /* Позиція по осі Y */
+  animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+/* Надпис головний на другому блоці */
+.word-2_1 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 900; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 53px; /* Розмір шрифта */
+  position: absolute;
+  top: 242px;
+  left: 222px;
+  line-height: 60px; /* Відстань між рядками */
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Надпис 1 на другому блоці */
+.word-2_2 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 900; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 40px; /* Розмір шрифта */
+  position: absolute;
+  top: 400px;
+  left: 222px;
+  line-height: 38px; /* Відстань між рядками */
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Пункти на другому блоці */
+.word-2_3 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 40px; /* Розмір шрифта */
+  position: absolute;
+  top: 450px;
+  left: 282px;
+  line-height: 45px; /* Відстань між рядками */
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Надпис 2 на другому блоці */
+.word-2_4 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 900; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 40px; /* Розмір шрифта */
+  position: absolute;
+  top: 665px;
+  left: 317px;
+  line-height: 38px; /* Відстань між рядками */
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Надпис 3 на другому блоці */
+.word-2_5 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 900; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 40px; /* Розмір шрифта */
+  position: absolute;
+  top: 760px;
+  left: 318px;
+  line-height: 38px; /* Відстань між рядками */
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+
+/* Елементи третьої групи */
+/* Налаштування ілюстрації у третьому блоці з елементами */
+.icon3_1 {
+  width: 1520px; /* Ширина блока */
+  height: 658px; /* Висота блока */
+  background-image: url('carousel3-images/icon3_1.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Запобігає повторенню SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 160px; /* Позиція по осі X */
+  top: 286px; /* Позиція по осі Y */
+  animation: fadeInZoom 0.2s ease-in-out forwards;
+}
+
+/* Надпис 1 на третьому блоці */
+.word-3_1 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 900; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 60px; /* Розмір шрифта */
+  position: absolute;
+  top: 270px;
+  left: 210px;
+  line-height: 38px; /* Відстань між рядками */
+  animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+/* Надпис 2 на третьому блоці */
+.word-3_2 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 900; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 40px; /* Розмір шрифта */
+  position: absolute;
+  top: 350px;
+  left: 210px;
+  line-height: 38px; /* Відстань між рядками */
+  animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+
+/* Загальний сірий блок */ 
+#gray-block {
+  position: absolute; /* Для точного позиціонування */
+  top: 1085px; /* Координата Y */
+  left: 0px; /* Координата X */
+  width: 1890px; /* Ширина */
+  height: 715px; /* Висота */
+  background-color: #F8F8F8; /* Колір */
+  border-radius: 0 0 0px 0px; /* Закруглюємо нижні кути */
+}
+
+/* Налаштування ілюстрації пакунку з елементами */
+.icon1g {
+  width: 967px; /* Ширина блоку */
+  height: 967px; /* Висота блоку */
+  background-image: url('gray-block-images/icon1g.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 838px; /* Позиція по осі X */
+  top: 1075px; /* Позиція по осі Y */
+}
+
+/* Налаштування фону з групи еліпсу та прямокутника */
+.icon2g {
+  width: 1890px; /* Ширина блоку */
+  height: 652px; /* Висота блоку */
+  background-image: url('gray-block-images/icon2g.svg'); /* Шлях до SVG */
+  background-size: cover; /* Це розтягне зображення на всю ширину блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 0px; /* Позиція по осі X */
+  top: 1798px; /* Позиція по осі Y */
+  z-index: -1; /* Найзадніший шар */
+}
+
+/* Налаштування ілюстрації іконка 1 */
+.icon3g {
+  width: 72px; /* Ширина блоку */
+  height: 72px; /* Висота блоку */
+  background-image: url('gray-block-images/icon3g.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 199px; /* Позиція по осі X */
+  top: 1515px; /* Позиція по осі Y */
+}
+
+/* Налаштування ілюстрації іконка 2 */
+.icon4g {
+  width: 72px; /* Ширина блоку */
+  height: 72px; /* Висота блоку */
+  background-image: url('gray-block-images/icon4g.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 199px; /* Позиція по осі X */
+  top: 1610px; /* Позиція по осі Y */
+}
+
+/* Налаштування ілюстрації іконка 3 */
+.icon5g {
+  width: 72px; /* Ширина блоку */
+  height: 72px; /* Висота блоку */
+  background-image: url('gray-block-images/icon5g.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 199px; /* Позиція по осі X */
+  top: 1705px; /* Позиція по осі Y */
+}
+
+/* Слово 1g (речення 1) */
+.word-1g {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 900; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 56px; /* Розмір шрифта */
+  position: absolute;
+  top: 1160px;
+  left: 199px;
+  line-height: 70px; /* Відстань між рядками */
+}
+
+/* Слово 2g (речення 2) */
+.word-2g {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 900; /* Жирність шрифта */
+  color: #3852B9; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 56px; /* Розмір шрифта */
+  position: absolute;
+  top: 1160px;
+  left: 880px;
+  line-height: 70px; /* Відстань між рядками */
+}
+
+/* Слово 3g (речення 3) */
+.word-3g {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 300; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 40px; /* Розмір шрифта */
+  position: absolute;
+  top: 1245px;
+  left: 199px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Слово 4g (речення 4) */
+.word-4g {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 48px; /* Розмір шрифта */
+  position: absolute;
+  top: 1435px;
+  left: 199px;
+  line-height: 70px; /* Відстань між рядками */
+}
+
+/* Слово 5g (речення 5) */
+.word-5g {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 40px; /* Розмір шрифта */
+  position: absolute;
+  top: 1512px;
+  left: 291px;
+  line-height: 70px; /* Відстань між рядками */
+}
+
+/* Слово 6g (речення 6) */
+.word-6g {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 40px; /* Розмір шрифта */
+  position: absolute;
+  top: 1604px;
+  left: 291px;
+  line-height: 40px; /* Відстань між рядками */
+}
+
+/* Слово 7g (речення 7) */
+.word-7g {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 40px; /* Розмір шрифта */
+  position: absolute;
+  top: 1699px;
+  left: 291px;
+  line-height: 40px; /* Відстань між рядками */
+}
+
+/* Фігура для кнопки - Оформити картку. Прямокутник з круглими кутами */
+.rounded-rectangle4 {
+  position: absolute; /* Використання абсолютного позиціонування для зміни розташування */
+  width: 368px; /* Ширина прямокутника */
+  height: 82px; /* Висота прямокутника */
+  background-color: #2C2C2C; /* Колір фону */
+  border-radius: 10px; /* Закруглення кутів до кругів */
+  top: 1820px; /* Розташування по вертикалі (можна змінювати) */
+  left: 309px; /* Розташування по горизонталі (можна змінювати) */
+  display: flex; /* Для вирівнювання тексту по центру */
+  justify-content: center; /* Центруємо текст по горизонталі */
+  align-items: center; /* Центруємо текст по вертикалі */
+  transition: background-color 0.3s, color 0.3s; /* Плавний перехід для фону і тексту */
+  cursor: pointer; /* Зміна курсору на вказівник */
+}
+
+/* Текст для кнопки з написом - Детальніше */
+.rounded-rectangle4 span {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #ffffff; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 40px; /* Розмір шрифта */
+  top: 0px; /* Розташування тексту по вертикалі */
+  left: 0px; /* Розташування тексту по горизонталі */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Анімація при наведенні */
+.rounded-rectangle4:hover {
+  background-color: #ffffff; /* Колір фону при наведенні */
+}
+
+.rounded-rectangle4:hover span {
+  color: #3852B9; /* Колір тексту при наведенні */
+}
+
+/* Загальний блакитний блок */
+#blue-block {
+  position: absolute; /* Для точного позиціонування */
+  top: 2448px; /* Координата Y */
+  left: 0px; /* Координата X */
+  width: 1890px; /* Ширина */
+  height: 480px; /* Висота */
+  background-color: #B4CAF9; /* Колір */
+  border-radius: 0 0 0px 0px; /* Закруглюємо нижні кути */
+}
+
+/* Налаштування ілюстрації телефону */
+.icon1b {
+  width: 686px; /* Ширина блоку */
+  height: 884px; /* Висота блоку */
+  background-image: url('blue-block-images/icon1b.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб воно не виходило за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціювати блок */
+  left: 180px; /* Позиція по осі X */
+  top: 2064px; /* Позиція по осі Y */
+}
+
+/* Кнопка чат підтримки */
+.icon2b {
+  width: 101px; /* Ширина блоку */
+  height: 139px; /* Висота блоку */
+  background-image: url('blue-block-images/icon2b.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб воно не виходило за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціювати блок */
+  left: 1488px; /* Позиція по осі X */
+  top: 2753px; /* Позиція по осі Y */
+  /* Застосовуємо анімації */
+  animation: zoomInOut 3s ease-in-out infinite, changeColor 3s ease-in-out infinite;
+  cursor: pointer; /* Змінюємо курсор на вказівник */
+  transition: transform 0.3s ease-in-out; /* Плавність при наведенні */
+}
+
+@keyframes zoomInOut {
+  0%, 100% { transform: scale(1); } /* Звичайний розмір */
+  50% { transform: scale(1.1); } /* Легке збільшення */
+}
+
+@keyframes changeColor {
+  0%, 100% { filter: brightness(1) saturate(1); } /* Звичайний синій */
+  50% { filter: brightness(2) saturate(0); } /* Перехід до білого */
+}
+
+/* Додатково: при наведенні робимо зум сильнішим */
+.icon2b:hover {
+  transform: scale(1.15); /* Трохи більше збільшення при наведенні */
+}
+
+/* Налаштування смс 1 */
+.sms1b {
+  width: 405px; /* Ширина блоку */
+  height: 228px; /* Висота блоку */
+  background-image: url('blue-block-images/sms1b.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб воно не виходило за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціювати блок */
+  left: 270px; /* Позиція по осі X */
+  top: 2310px; /* Позиція по осі Y */
+}
+
+/* Налаштування смс 2 */
+.sms2b {
+  width: 303px; /* Ширина блоку */
+  height: 78px; /* Висота блоку */
+  background-image: url('blue-block-images/sms2b.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб воно не виходило за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціювати блок */
+  left: 485px; /* Позиція по осі X */
+  top: 2550px; /* Позиція по осі Y */
+}
+
+/* Слово 1 ( смс 1 ) */
+.word-sms1b {
+  font-family: 'Inter', semibold; /* Шрифт */
+  font-weight: 500; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 30px; /* Розмір шрифта */
+  position: absolute;
+  top: 2340px;
+  left: 305px;
+  line-height: 35px; /* Відстань між рядками */
+}
+
+/* Слово 2 ( смс 2 ) */
+.word-sms2b {
+  font-family: 'Inter', semibold; /* Шрифт */
+  font-weight: 400; /* Жирність шрифта */
+  color: #ffffff; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 30px; /* Розмір шрифта */
+  position: absolute;
+  top: 2575px;
+  left: 515px;
+  line-height: 30px; /* Відстань між рядками */
+}
+
+/* Анміцаії для смс у чаті на телефоні  */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Спочатку приховуємо елементи */
+.sms1b, .word-sms1b, .sms2b, .word-sms2b {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Поява першого SMS */
+.sms1b.show, .word-sms1b.show {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Поява другого SMS через 1.5 сек */
+.sms2b.show, .word-sms2b.show {
+  animation: fadeIn 1s ease-in-out 1.5s forwards;
+}
+
+/* Одночасне зникнення всіх елементів */
+.hide .sms1b, .hide .word-sms1b,
+.hide .sms2b, .hide .word-sms2b {
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+/* Слово 1b (речення 1) */
+.word-1b {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 56px; /* Розмір шрифта */
+  position: absolute;
+  top: 2170px;
+  left: 905px;
+  line-height: 30px; /* Відстань між рядками */
+}
+
+/* Слово 2b (речення 2) */
+.word-2b {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #3852B9; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 56px; /* Розмір шрифта */
+  position: absolute;
+  top: 2170px;
+  left: 1390px;
+  line-height: 30px; /* Відстань між рядками */
+}
+
+/* Слово 3b (речення 3) */
+.word-3b {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 56px; /* Розмір шрифта */
+  position: absolute;
+  top: 2225px;
+  left: 905px;
+  line-height: 30px; /* Відстань між рядками */
+}
+
+/* Слово 4b (речення 4) */
+.word-4b {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 40px; /* Розмір шрифта */
+  position: absolute;
+  top: 2300px;
+  left: 905px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Слово 5b (речення 5) */
+.word-5b {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 40px; /* Розмір шрифта */
+  position: absolute;
+  top: 2550px;
+  left: 905px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Слово 6b (речення 6) */
+.word-6b {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між літерами */
+  font-size: 40px; /* Розмір шрифта */
+  position: absolute;
+  top: 2750px;
+  left: 905px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Блок з карткою 1 */
+.cardblock1 {
+  width: 632px; /* Ширина блока */
+  height: 734px; /* Висота блока */
+  background-image: url('images/cardblock1.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Запобігає повторенню SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 10px; /* Позиція по осі X */
+  top: 2950px; /* Позиція по осі Y */
+}
+
+/* Слово 1cb1 (речення 1) */
+.word-1cb1 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #3852B9; /* Колір тексту */
+  letter-spacing: 0px; /* Розстояние між буквами */
+  font-size: 32px; /* Розмір шрифта */
+  position: absolute;
+  top: 2980px;
+  left: 35px;
+  line-height: 45px; /* Розстояние між рядками */
+}
+
+/* Слово 2cb1 (речення 2) */
+.word-2cb1 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Розстояние між буквами */
+  font-size: 32px; /* Розмір шрифта */
+  position: absolute;
+  top: 2980px;
+  left: 155px;
+  line-height: 45px; /* Розстояние між рядками */
+}
+
+/* Слово 3cb1 (пункти 1) */
+.word-3cb1 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Розстояние між буквами */
+  font-size: 28px; /* Розмір шрифта */
+  position: absolute;
+  top: 3400px;
+  left: 65px;
+  line-height: 45px; /* Розстояние між рядками */
+}
+
+/* Фігура для кнопки - Відкрити. Прямокутник з круглими кутами */
+.rounded-rectangle5 {
+  position: absolute; /* Використання абсолютного позиціонування для зміни розташування */
+  width: 254px; /* Ширина прямокутника */
+  height: 67px; /* Висота прямокутника */
+  background-color: #3852B9; /* Колір фону */
+  border-radius: 10px; /* Закруглення кутів до кругів */
+  top: 3590px; /* Розташування по вертикалі (можна змінювати) */
+  left: 40px; /* Розташування по горизонталі (можна змінювати) */
+  display: flex; /* Для вирівнювання тексту по центру */
+  justify-content: center; /* Центруємо текст по горизонталі */
+  align-items: center; /* Центруємо текст по вертикалі */
+  transition: background-color 0.3s, color 0.3s; /* Плавний перехід для фону та тексту */
+  cursor: pointer; /* Зміна курсора на вказівник */
+}
+
+/* Текст для кнопки з написом - Відкрити */
+.rounded-rectangle5 span {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #ffffff; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 36px; /* Розмір шрифта */
+  top: 0px; /* Розташування тексту по вертикалі */
+  left: 0px; /* Розташування тексту по горизонталі */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Анімація при наведенні */
+.rounded-rectangle5:hover {
+  background-color: #a3b0e3; /* Колір фону при наведенні */
+}
+
+.rounded-rectangle5:hover span {
+  color: #000000; /* Колір тексту при наведенні */
+}
+
+/* Фігура для кнопки - Детальніше. Прямокутник з круглими кутами */
+.rounded-rectangle6 {
+  position: absolute; /* Використання абсолютного позиціонування для зміни розташування */
+  width: 254px; /* Ширина прямокутника */
+  height: 67px; /* Висота прямокутника */
+  background-color: #D9D9D9; /* Колір фону */
+  border-radius: 10px; /* Закруглення кутів до кругів */
+  top: 3590px; /* Розташування по вертикалі (можна змінювати) */
+  left: 325px; /* Розташування по горизонталі (можна змінювати) */
+  display: flex; /* Для вирівнювання тексту по центру */
+  justify-content: center; /* Центруємо текст по горизонталі */
+  align-items: center; /* Центруємо текст по вертикалі */
+  transition: background-color 0.3s, color 0.3s; /* Плавний перехід для фону та тексту */
+  cursor: pointer; /* Зміна курсора на вказівник */
+}
+
+/* Текст для кнопки з написом - Детальніше */
+.rounded-rectangle6 span {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #3852B9; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 36px; /* Розмір шрифта */
+  top: 0px; /* Розташування тексту по вертикалі */
+  left: 0px; /* Розташування тексту по горизонталі */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Анімація при наведенні */
+.rounded-rectangle6:hover {
+  background-color: #3852B9; /* Колір фону при наведенні */
+}
+
+.rounded-rectangle6:hover span {
+  color: #ffffff; /* Колір тексту при наведенні */
+}
+
+/* Блок з карткою 2 */
+.cardblock2 {
+  width: 632px; /* Ширина блоку */
+  height: 734px; /* Висота блоку */
+  background-image: url('images/cardblock2.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціювати блок */
+  left: 645px; /* Позиція по осі X */
+  top: 2950px; /* Позиція по осі Y */
+}
+
+/* Слово 1cb2 (речення 1) */
+.word-1cb2 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #3852B9; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 32px; /* Розмір шрифта */
+  position: absolute;
+  top: 2980px;
+  left: 730px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Слово 2cb2 (речення 2) */
+.word-2cb2 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 32px; /* Розмір шрифта */
+  position: absolute;
+  top: 2980px;
+  left: 890px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Слово 3cb2 (пункти 3) */
+.word-3cb2 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 28px; /* Розмір шрифта */
+  position: absolute;
+  top: 3400px;
+  left: 703px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Фігура для кнопки - Відкрити. Прямокутник з круглими кінцями */
+.rounded-rectangle7 {
+  position: absolute; /* Використання абсолютного позиціювання для зміни розташування */
+  width: 254px; /* Ширина прямокутника */
+  height: 67px; /* Висота прямокутника */
+  background-color: #3852B9; /* Колір фону */
+  border-radius: 10px; /* Закруглення кутів до кіл */
+  top: 3590px; /* Розташування по вертикалі (можна змінювати) */
+  left: 677px; /* Розташування по горизонталі (можна змінювати) */
+  display: flex; /* Для вирівнювання тексту по центру */
+  justify-content: center; /* Центруємо текст по горизонталі */
+  align-items: center; /* Центруємо текст по вертикалі */
+  transition: background-color 0.3s, color 0.3s; /* Плавний перехід для фону і тексту */
+  cursor: pointer; /* Зміна курсору на вказівник */
+}
+
+/* Текст для кнопки з надписом - Відкрити */
+.rounded-rectangle7 span {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #ffffff; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 36px; /* Розмір шрифта */
+  top: 0px; /* Розташування тексту по вертикалі */
+  left: 0px; /* Розташування тексту по горизонталі */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Анімація при наведенні */
+.rounded-rectangle7:hover {
+  background-color: #a3b0e3; /* Колір фону при наведенні */
+}
+
+.rounded-rectangle7:hover span {
+  color: #000000; /* Колір тексту при наведенні */
+}
+
+/* Фігура для кнопки - Детальніше. Прямокутник з круглими кінцями */
+.rounded-rectangle8 {
+  position: absolute; /* Використання абсолютного позиціювання для зміни розташування */
+  width: 254px; /* Ширина прямокутника */
+  height: 67px; /* Висота прямокутника */
+  background-color: #D9D9D9; /* Колір фону */
+  border-radius: 10px; /* Закруглення кутів до кіл */
+  top: 3590px; /* Розташування по вертикалі (можна змінювати) */
+  left: 962px; /* Розташування по горизонталі (можна змінювати) */
+  display: flex; /* Для вирівнювання тексту по центру */
+  justify-content: center; /* Центруємо текст по горизонталі */
+  align-items: center; /* Центруємо текст по вертикалі */
+  transition: background-color 0.3s, color 0.3s; /* Плавний перехід для фону і тексту */
+  cursor: pointer; /* Зміна курсору на вказівник */
+}
+
+/* Текст для кнопки з надписом - Детальніше */
+.rounded-rectangle8 span {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #3852B9; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 36px; /* Розмір шрифта */
+  top: 0px; /* Розташування тексту по вертикалі */
+  left: 0px; /* Розташування тексту по горизонталі */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Анімація при наведенні */
+.rounded-rectangle8:hover {
+  background-color: #3852B9; /* Колір фону при наведенні */
+}
+
+.rounded-rectangle8:hover span {
+  color: #ffffff; /* Колір тексту при наведенні */
+}
+
+
+/* Блок з карткою 3 */
+.cardblock3 {
+  width: 632px; /* Ширина блоку */
+  height: 734px; /* Висота блоку */
+  background-image: url('images/cardblock3.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блоку */
+  background-repeat: no-repeat; /* Запобігає повторенню SVG */
+  position: absolute; /* Дозволяє точно позиціювати блок */
+  left: 1280px; /* Позиція по осі X */
+  top: 2950px; /* Позиція по осі Y */
+}
+
+/* Слово 1cb3 (речення 1) */
+.word-1cb3 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #3852B9; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 32px; /* Розмір шрифта */
+  position: absolute;
+  top: 2980px;
+  left: 1295px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Слово 2cb3 (речення 2) */
+.word-2cb3 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 32px; /* Розмір шрифта */
+  position: absolute;
+  top: 2980px;
+  left: 1455px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Слово 3cb3 (пункти 3) */
+.word-3cb3 {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Жирність шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 28px; /* Розмір шрифта */
+  position: absolute;
+  top: 3400px;
+  left: 1337px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Фігура для кнопки - Відкрити. Прямокутник з круглими кутами */
+.rounded-rectangle9 {
+  position: absolute; /* Використання абсолютного позиціонування для зміни розташування */
+  width: 254px; /* Ширина прямокутника */
+  height: 67px; /* Висота прямокутника */
+  background-color: #3852B9; /* Колір фону */
+  border-radius: 10px; /* Заокруглення кутів до кругів */
+  top: 3590px; /* Розташування по вертикалі (можна змінювати) */
+  left: 1312px; /* Розташування по горизонталі (можна змінювати) */
+  display: flex; /* Для вирівнювання тексту по центру */
+  justify-content: center; /* Центруємо текст по горизонталі */
+  align-items: center; /* Центруємо текст по вертикалі */
+  transition: background-color 0.3s, color 0.3s; /* Плавний перехід для фону і тексту */
+  cursor: pointer; /* Зміна курсора на вказівник */
+}
+
+/* Текст для кнопки з написом - Відкрити */
+.rounded-rectangle9 span {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #ffffff; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 36px; /* Розмір шрифта */
+  top: 0px; /* Розташування тексту по вертикалі */
+  left: 0px; /* Розташування тексту по горизонталі */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Анімація при наведенні */
+.rounded-rectangle9:hover {
+  background-color: #a3b0e3; /* Колір фону при наведенні */
+}
+
+.rounded-rectangle9:hover span {
+  color: #000000; /* Колір тексту при наведенні */
+}
+
+/* Фігура для кнопки - Детальніше. Прямокутник з круглими кутами */
+.rounded-rectangle11 {
+  position: absolute; /* Використання абсолютного позиціонування для зміни розташування */
+  width: 254px; /* Ширина прямокутника */
+  height: 67px; /* Висота прямокутника */
+  background-color: #D9D9D9; /* Колір фону */
+  border-radius: 10px; /* Заокруглення кутів до кругів */
+  top: 3590px; /* Розташування по вертикалі (можна змінювати) */
+  left: 1597px; /* Розташування по горизонталі (можна змінювати) */
+  display: flex; /* Для вирівнювання тексту по центру */
+  justify-content: center; /* Центруємо текст по горизонталі */
+  align-items: center; /* Центруємо текст по вертикалі */
+  transition: background-color 0.3s, color 0.3s; /* Плавний перехід для фону і тексту */
+  cursor: pointer; /* Зміна курсора на вказівник */
+}
+
+/* Текст для кнопки з написом - Детальніше */
+.rounded-rectangle11 span {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 600; /* Жирність шрифта */
+  color: #3852B9; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 36px; /* Розмір шрифта */
+  top: 0px; /* Розташування тексту по вертикалі */
+  left: 0px; /* Розташування тексту по горизонталі */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Анімація при наведенні */
+.rounded-rectangle11:hover {
+  background-color: #3852B9; /* Колір фону при наведенні */
+}
+
+.rounded-rectangle11:hover span {
+  color: #ffffff; /* Колір тексту при наведенні */
+}
+
+
+/* Сірий блок кінець */ 
+.icon1f {
+  width: 1890px; /* Ширина блоку */
+  height: 822px; /* Висота блоку */
+  background-image: url('footer-images/icon1f.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 0px; /* Позиція по осі X */
+  top: 3710px; /* Позиція по осі Y */
+}
+
+/* Слово 1f (1 слово) */
+.word-1f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 900; /* Жирний текст */
+  color: #000000; /* Колір тексту */
+  font-size: 30px; /* Розмір шрифту */
+  position: absolute;
+  top: 3786px;
+  left: 90px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-1f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-1f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 2f (2 слово) */
+.word-2f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Розмір шрифту */
+  position: absolute;
+  top: 3852px; /* +66 */
+  left: 90px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-2f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-2f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* Слово 3f (3 слово) */
+.word-3f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Розмір шрифту */
+  position: absolute;
+  top: 3918px; /* +66 */
+  left: 90px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-3f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-3f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 4f (4 слово) */
+.word-4f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Розмір шрифту */
+  position: absolute;
+  top: 3984px; /* +66 */
+  left: 90px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-4f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-4f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 5f (5 слово) */
+.word-5f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 900; /* Жирний текст */
+  color: #000000; /* Колір тексту */
+  font-size: 30px; /* Розмір шрифту */
+  position: absolute;
+  top: 4074px;
+  left: 90px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-5f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-5f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 6f (6 слово) */
+.word-6f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Розмір шрифту */
+  position: absolute;
+  top: 4140px; /* +66 */
+  left: 90px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-6f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-6f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 7f ( 7 слово ) */
+.word-7f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 4206px;/* +66 */
+  left: 90px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-7f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-7f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 8f ( 8 слово ) */
+.word-8f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 4272px;/* +66 */
+  left: 90px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-8f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-8f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 9f ( 9 слово ) */
+.word-9f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 900; /* Жирний текст */
+  color: #000000; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 3786px;
+  left: 520px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-9f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-9f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 10f ( 10 слово ) */
+.word-10f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 3852px;/* +66 */
+  left: 520px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-10f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-10f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 11f ( 11 слово ) */
+.word-11f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 3918px;/* +66 */
+  left: 520px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-11f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-11f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 12f ( 12 слово ) */
+.word-12f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 3984px;/* +66 */
+  left: 520px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-12f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-12f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 13f ( 13 слово ) */
+.word-13f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 900; /* Жирний текст */
+  color: #000000; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 4074px;
+  left: 520px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-13f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-13f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 14f ( 14 слово ) */
+.word-14f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 4140px;/* +66 */
+  left: 520px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-14f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-14f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 15f ( 15 слово ) */
+.word-15f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 4206px;/* +66 */
+  left: 520px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-15f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-15f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 16f ( 16 слово ) */
+.word-16f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 4272px;/* +66 */
+  left: 520px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-16f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-16f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 17f ( 17 слово ) */
+.word-17f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 900; /* Жирний текст */
+  color: #000000; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 3786px;
+  left: 950px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-17f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-17f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 18f ( 18 слово ) */
+.word-18f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 3852px;/* +66 */
+  left: 950px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-18f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-18f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Слово 19f ( 19 слово ) */
+.word-19f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Размер шрифта */
+  position: absolute;
+  top: 3918px;/* +66 */
+  left: 950px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-19f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-19f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Телефон footer */
+.icon2f {
+  width: 57.5px; /* Ширина блока */
+  height: 57.5px; /* Висота блока */
+  background-image: url('footer-images/icon2f.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 1315px; /* Позиція по осі X */
+  top: 3786px; /* Позиція по осі Y */
+}
+
+/* Слово 20f (Напис 20 номер 1) */
+.word-20f {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Товщина шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 48px; /* Розмір шрифта */
+  position: absolute;
+  top: 3776px;
+  left: 1395px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Слово 21f (Напис 21) */
+.word-21f {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Товщина шрифта */
+  color: #444444; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 30px; /* Розмір шрифта */
+  position: absolute;
+  top: 3816px;
+  left: 1395px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Global footer */
+.icon3f {
+  width: 57px; /* Ширина блока */
+  height: 57px; /* Висота блока */
+  background-image: url('footer-images/icon3f.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 1315px; /* Позиція по осі X */
+  top: 3916px; /* Позиція по осі Y */
+}
+
+/* Слово 22f (Напис 22 номер 2) */
+.word-22f {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Товщина шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 48px; /* Розмір шрифта */
+  position: absolute;
+  top: 3911px;
+  left: 1395px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Слово 23f (Напис 23) */
+.word-23f {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Товщина шрифта */
+  color: #444444; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 30px; /* Розмір шрифта */
+  position: absolute;
+  top: 3951px;
+  left: 1395px;
+  line-height: 35px; /* Відстань між рядками */
+}
+
+/* Питання блок енд */
+.icon4f {
+  width: 571px; /* Ширина блока */
+  height: 3px; /* Висота блока */
+  background-image: url('footer-images/icon4f.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 1313px; /* Позиція по осі X */
+  top: 4046px; /* Позиція по осі Y */
+}
+
+/* Питання блок енд */
+.icon5f {
+  width: 59px; /* Ширина блока */
+  height: 59px; /* Висота блока */
+  background-image: url('footer-images/icon5f.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб він не виходив за межі блока */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціонувати блок */
+  left: 1315px; /* Позиція по осі X */
+  top: 4076px; /* Позиція по осі Y */
+}
+
+/* Слово 24f (Напис 24) */
+.word-24f {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Товщина шрифта */
+  color: #444444; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 30px; /* Розмір шрифта */
+  position: absolute;
+  top: 4064px;
+  left: 1395px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* Фігура для кнопки - Детальніше. Прямокутник з круглими кутами */
+.rounded-rectangle10 {
+  position: absolute; /* Використання абсолютного позиціонування для зміни розташування */
+  width: 240px; /* Ширина прямокутника */
+  height: 63px; /* Висота прямокутника */
+  background-color: #F3F3F3; /* Колір фону */
+  border-radius: 50px; /* Закруглення кутів до кіл */
+  top: 4124px; /* Розташування по вертикалі (можна змінювати) */
+  left: 1395px; /* Розташування по горизонталі (можна змінювати) */
+  display: flex; /* Для вирівнювання тексту по центру */
+  justify-content: center; /* Центруємо текст по горизонталі */
+  align-items: center; /* Центруємо текст по вертикалі */
+  transition: background-color 0.3s, color 0.3s; /* Плавний перехід для фону і тексту */
+  cursor: pointer; /* Змінюємо курсор на вказівник */
+  border: 2px solid #000000; /* Закрашена межа (товщина 5px, колір #FF5733) */
+}
+
+/* Текст для кнопки з написом - Детальніше */
+.rounded-rectangle10 span {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 200; /* Товщина шрифта */
+  color: #000000; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 30px; /* Розмір шрифта */
+  top: 0px; /* Розташування тексту по вертикалі */
+  left: 0px; /* Розташування тексту по горизонталі */
+}
+
+/* Анімація при наведенні */
+.rounded-rectangle10:hover {
+  background-color: #ffffff; /* Колір фону при наведенні */
+}
+
+.rounded-rectangle10:hover span {
+  color: #181818; /* Колір тексту при наведенні */
+}
+
+/* Слово 25f ( Надпис 25 ) */
+.word-25f {
+  font-family: 'Ysabeau Infant', semibold; /* Шрифт */
+  font-weight: 400; /* Жирність шрифта */
+  color: #444444; /* Колір тексту */
+  letter-spacing: 0px; /* Відстань між буквами */
+  font-size: 30px; /* Розмір шрифта */
+  position: absolute;
+  top: 4434px;
+  left: 1175px;
+  line-height: 45px; /* Відстань між рядками */
+}
+
+/* YouTube блок енд */
+.icon6f {
+  width: 46px; /* Ширина блоку */
+  height: 35px; /* Висота блоку */
+  background-image: url('footer-images/icon6f.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб воно не виходило за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціювати блок */
+  left: 935px; /* Позиція по осі X */
+  top: 4443px; /* Позиція по осі Y */
+}
+
+/* Instagram блок енд */
+.icon7f {
+  width: 46px; /* Ширина блоку */
+  height: 46px; /* Висота блоку */
+  background-image: url('footer-images/icon7f.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб воно не виходило за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціювати блок */
+  left: 1015px; /* Позиція по осі X */
+  top: 4437px; /* Позиція по осі Y */
+}
+
+/* Facebook блок енд */
+.icon8f {
+  width: 46px; /* Ширина блоку */
+  height: 46px; /* Висота блоку */
+  background-image: url('footer-images/icon8f.svg'); /* Шлях до SVG */
+  background-size: contain; /* Масштабує SVG, щоб воно не виходило за межі блоку */
+  background-repeat: no-repeat; /* Забороняє повторення SVG */
+  position: absolute; /* Дозволяє точно позиціювати блок */
+  left: 1095px; /* Позиція по осі X */
+  top: 4436px; /* Позиція по осі Y */
+}
+
+/* Слово 26f ( UA ) */
+.word-26f {
+  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
+  font-weight: 500; /* Жирний текст */
+  color: #444444; /* Колір тексту */
+  font-size: 30px; /* Розмір шрифта */
+  position: absolute;
+  top: 4430px; /* +66 */
+  left: 840px;
+  display: inline-block; /* Щоб розмір тексту визначав зону наведення */
+  padding: 10px 20px; /* Відступи навколо тексту */
+  cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Псевдоелемент (невидимий блок) */
+.word-26f::after {
+  content: ""; /* Порожній контент, щоб створити блок */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 185, 255, 0.5); /* Напівпрозорий синій фон */
+  border-radius: 10px; /* Закруглені кути (можна прибрати) */
+  opacity: 0; /* Початково невидимий */
+  transform: scaleY(0); /* Початково стиснутий */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Анімація */
+}
+
+/* При наведенні з'являється блок */
+.word-26f:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
