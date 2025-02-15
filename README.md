@@ -13,3 +13,6 @@ To see how the website works, simply click on the [GitHub Pages page of this pro
 
 Additionally, there is a folder called **`project-screenshots`** in the repository, which contains screenshots of the website, so you can see what the site looks like before running it.
 
+## Author
+
+**Student / Студент ДУІТЗ, ІПЗ 2.02, Туряниця Сергій / Turianytsia Serhii**
