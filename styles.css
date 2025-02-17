@@ -5,8 +5,9 @@
 }
 
 body {
+  zoom: 60%;
   height: 100vh;
-  background-color: #f0f0f0; /* Колір фону для контрасту */
+  background-color: #3852b927; /* Колір фону для контрасту */
   display: flex;
   justify-content: center;
   align-items: flex-start; /* Прив'язка блока до верхньої частини */
@@ -30,77 +31,104 @@ body {
   background-repeat: no-repeat; /* Щоб зображення не повторювалося */
 }
 
-/* Слово 1 */
+/* Слово 1 - Spore */
 .word-1 {
-  font-family: 'Fugaz One', sans-serif; /* Шрифт */
-  font-weight: 500; /* Жирність шрифта */
-  color: #000000; /* Колір тексту */
-  letter-spacing: 0px; /* Відстань між буквами */
-  font-size: 64px; /* Розмір шрифта */
+  font-family: 'Fugaz One', sans-serif;
+  font-weight: 500;
+  color: #000000;
+  letter-spacing: 0px;
+  font-size: 64px;
   position: absolute;
   top: 40px;
   left: 322px;
+  cursor: pointer; 
 }
 
-/* Слово 2 */
+/* Слово 2 - Pay */
 .word-2 {
-  font-family: 'Fugaz One', sans-serif; /* Шрифт */
-  font-weight: 500; /* Жирність шрифта для слова 2 */
-  color: #3852B9; /* Колір тексту для слова 2 */
-  letter-spacing: 0px; /* Відстань між буквами для слова 2 */
-  font-size: 64px; /* Розмір шрифта для слова 2 */
+  font-family: 'Fugaz One', sans-serif;
+  font-weight: 500;
+  color: #3852B9;
+  letter-spacing: 0px;
+  font-size: 64px;
   position: absolute;
   top: 40px;
   left: 506px;
+  cursor: pointer; 
 }
 
-/* Слово 3 */
+/* Слово 3 - Головна */
 .word-3 {
-  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
-  font-weight: 200; /* Жирність шрифта для слова 3 */
-  color: #000000; /* Колір тексту для слова 3 */
-  letter-spacing: 0px; /* Відстань між буквами для слова 3 */
-  font-size: 36px; /* Розмір шрифта для слова 3 */
+  font-family: 'Ysabeau Infant', sans-serif;
+  font-weight: 200;
+  color: #000000;
+  letter-spacing: 0px;
+  font-size: 36px;
   position: absolute;
   top: 64px;
   left: 737px;
+  cursor: pointer; 
+  transition: all 0.3s ease; 
 }
 
-/* Слово 4 */
+.word-3:hover {
+  text-decoration: underline solid black; 
+}
+
+/* Слово 4 - Про банк */
 .word-4 {
-  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
-  font-weight: 200; /* Жирність шрифта для слова 4 */
-  color: #414141; /* Колір тексту для слова 4 */
-  letter-spacing: 0px; /* Відстань між буквами для слова 4 */
-  font-size: 36px; /* Розмір шрифта для слова 4 */
+  font-family: 'Ysabeau Infant', sans-serif;
+  font-weight: 200;
+  color: #414141;
+  letter-spacing: 0px;
+  font-size: 36px;
   position: absolute;
   top: 64px;
   left: 908px;
+  cursor: pointer; 
+  transition: all 0.3s ease; 
 }
 
-/* Слово 5 */
+.word-4:hover {
+  text-decoration: underline solid black; 
+}
+
+/* Слово 5 - Тг бот */
 .word-5 {
-  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
-  font-weight: 200; /* Жирність шрифта для слова 5 */
-  color: #414141; /* Колір тексту для слова 5 */
-  letter-spacing: 0px; /* Відстань між буквами для слова 5 */
-  font-size: 36px; /* Розмір шрифта для слова 5 */
+  font-family: 'Ysabeau Infant', sans-serif;
+  font-weight: 200;
+  color: #414141;
+  letter-spacing: 0px;
+  font-size: 36px;
   position: absolute;
   top: 64px;
   left: 1094px;
+  cursor: pointer; 
+  transition: all 0.3s ease; 
 }
 
-/* Слово 6 */
+.word-5:hover {
+  text-decoration: underline solid black; 
+}
+
+/* Слово 6 - UA */
 .word-6 {
-  font-family: 'Ysabeau Infant', sans-serif; /* Шрифт */
-  font-weight: 200; /* Жирність шрифта для слова 6 */
-  color: #414141; /* Колір тексту для слова 6 */
-  letter-spacing: 0px; /* Відстань між буквами для слова 6 */
-  font-size: 36px; /* Розмір шрифта для слова 6 */
+  font-family: 'Ysabeau Infant', sans-serif;
+  font-weight: 200;
+  color: #414141;
+  letter-spacing: 0px;
+  font-size: 36px;
   position: absolute;
   top: 64px;
   left: 1228px;
+  cursor: pointer; 
+  transition: all 0.3s ease; 
 }
+
+.word-6:hover {
+  color: blue; 
+}
+
 
 /* Фігура для кнопки - Увійти. Прямокутник з округлими кутами */
 .rounded-rectangle2 {
@@ -208,69 +236,40 @@ body {
   overflow: hidden; /* Забороняємо елементам виходити за межі контейнера */
 }
 
-/* Стиль для окремих блоків всередині контейнера */
+/* Блоки всередині контейнера */
 .block {
-  display: flex; /* Вирівнюємо елементи по горизонталі та вертикалі */
-  align-items: center; /* Центруємо по вертикалі */
-  justify-content: center; /* Центруємо по горизонталі */
-  background-color: rgb(255, 255, 255); /* Білий фон */
-  border-left: 2px solid rgb(181, 181, 181); /* Лівий бордер для всіх блоків, окрім першого */
-  cursor: pointer; /* Змінюємо курсор на вказівник при наведенні */
-  transition: 0.3s ease; /* Плавний перехід для всіх стилів */
-  height: 100%; /* Висота блоку дорівнює висоті контейнера */
-  padding: 0 15px; /* Відступи по горизонталі */
-  text-align: center; /* Центруємо текст по горизонталі */
-  user-select: none; /* Забороняємо виділення тексту */
-  outline: none; /* Вимикаємо обведення при фокусі */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-left: 2px solid rgb(181, 181, 181);
+  cursor: pointer;
+  transition: 0.3s ease;
+  height: 100%;
+  padding: 0 15px;
+  text-align: center;
+  user-select: none;
+  outline: none;
+  font-size: 31px;
+  font-family: "Ysabeau Infant", sans-serif;
 }
 
-/* Видаляємо ліву межу у першого блоку */
-.block:first-child {
-  border-left: none;
+/* Підсвітка при наведенні */
+.block:hover {
+  color: #3852B9; /* Змінюється колір тексту на синій */
+  border-bottom: 2px solid black; /* Лінія під блоком */
+  transition: border 0.3s ease; /* Плавний перехід для лінії */
 }
 
-/* Загальні стилі для шрифтів */
-.block {
-  font-size: 31px; /* Розмір шрифта за замовчуванням */
-  font-family: "Ysabeau Infant", sans-serif; /* Шрифт за замовчуванням */
-}
-
-/* Унікальні стилі для кожного блоку */
-#block1 {
-  width: 182px; /* Ширина першого блоку */
-  border-top-left-radius: 10px; /* Закруглений верхній лівий кут */
-}
-
-#block2 {
-  width: 203px; /* Ширина другого блоку */
-}
-
-#block3 {
-  width: 210px; /* Ширина третього блоку */
-}
-
-#block4 {
-  width: 182px; /* Ширина четвертого блоку */
-}
-
-#block5 {
-  width: 191px; /* Ширина п'ятого блоку */
-}
-
-#block6 {
-  width: 209px; /* Ширина шостого блоку */
-}
-
-#block7 {
-  width: 268px; /* Ширина сьомого блоку */
-  color: #3852B9; /* Колір тексту для сьомого блоку */
-  padding-right: 72px; /* Відступ справа для сьомого блоку */
-}
-
-#block8 {
-  width: 110px; /* Ширина восьмого блоку */
-  border-top-right-radius: 10px; /* Закруглений верхній правий кут */
-}
+/* Окремі стилі для кожного блоку */
+#block1 { width: 182px; border-top-left-radius: 10px; }
+#block2 { width: 203px; }
+#block3 { width: 210px; }
+#block4 { width: 182px; }
+#block5 { width: 191px; }
+#block6 { width: 209px; }
+#block7 { width: 268px; color: #3852B9; padding-right: 72px; }
+#block8 { width: 110px; border-top-right-radius: 10px; }
 
 /* Іконка банковської картки */
 .icon {
@@ -2557,4 +2556,3 @@ color: #3852B9; /* Колір тексту при наведенні */
   opacity: 1;
   transform: scale(1);
 }
-
