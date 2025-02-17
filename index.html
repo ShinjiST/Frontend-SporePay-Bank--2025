@@ -11,16 +11,19 @@
     <!-- Підключення шрифту Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>SporePay</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
 </head>
 <body>
     <!-- Шапка сайту -->
     <div class="white-block">
-        <div class="word-1" id="aboutSection">Spore</div>
-        <div class="word-2">Pay</div>
-        <div class="word-3">Головна</div>
-        <div class="word-4">Про банк</div>
-        <div class="word-5">Тг бот</div>
-        <div class="word-6">UA</div>
+      <div class="word-1" id="aboutSection" onclick="reloadPage()">Spore</div>
+      <div class="word-2" onclick="reloadPage()">Pay</div>
+      <div class="word-3" onclick="scrollToElement('block1')">Головна</div>
+      <div class="word-4" onclick="scrollToElement('block1')">Про банк</div>
+      <div class="word-5" onclick="scrollToElement('supportSection')">Тг бот</div>
+      <div class="word-6" id="uaLink" onmouseover="hoverEffect(true)" onmouseout="hoverEffect(false)" onclick="changeLanguage()">EN</div>
+
         <!-- Кнопка з надписом Увійти -->
         <div class="rounded-rectangle2" id="loginButton">
             <span>Увійти</span>
@@ -31,7 +34,6 @@
         <div id="content"></div>
     </div>
        
-        
     <!-- Карусель поділена на три групи -->
     <div class="carousel">
         <div class="mask">
@@ -125,17 +127,17 @@
     <script src="join.js"></script>
 
 
-    <!-- Контейнер з розділами(розташований аісля каруселі щоб завжди відобрражався та не перекривався каруселью, CSS розташований до каруселі) -->
+    <!-- Контейнер з розділами(розташований після каруселі щоб завжди відобрражався та не перекривався каруселью, CSS розташований до каруселі) -->
     <div class="container">
-        <div class="block" id="block1">Картки</div>
-        <div class="block" id="block2">Кредити</div>
-        <div class="block" id="block3">Відділення</div>
-        <div class="block" id="block4">Відгуки</div>
-        <div class="block" id="block5">Платежі</div>
-        <div class="block" id="block6">Перекази</div>
-        <div class="block" id="block7">SporePay</div>
-        <div class="block" id="block8">.</div>
-    </div>
+    <div class="block" id="block1" onclick="scrollToCard1()">Картки</div>
+    <div class="block" id="block2" onmouseover="highlightBlock(this)">Кредити</div>
+    <div class="block" id="block3" onmouseover="highlightBlock(this)">Відділення</div>
+    <div class="block" id="block4" onmouseover="highlightBlock(this)">Відгуки</div>
+    <div class="block" id="block5" onmouseover="highlightBlock(this)">Платежі</div>
+    <div class="block" id="block6" onmouseover="highlightBlock(this)">Перекази</div>
+    <div class="block" id="block7" onclick="scrollToSpore()">SporePay</div>
+    <div class="block" id="block8" onmouseover="highlightBlock(this)">.</div>
+</div>
     <!-- Іконка банковської картки -->
     <div class="icon"></div>
     <!-- Логотип SporePay сірого кольору -->
@@ -381,9 +383,9 @@
         <div class="icon5f"></div>  
         <!-- Надпис 24 на сірому footer -->
         <div div class="word-24f">Питання та пропозиції</div>
-        <div class="rounded-rectangle10">
-          <span>Написати</span></div>
-           
+        <div class="rounded-rectangle10" onclick="openGmail()">
+          <span>Написати</span>
+        </div>
         <!-- Надпис 25 на сірому footer -->
         <div div class="word-25f">© 2025 SporePay Ліцензія № 22 від 11.02.2025</div>
         <!-- YouTube на сірому footer -->
@@ -392,8 +394,8 @@
         <div class="icon7f"></div>  
         <!-- Facebook на сірому footer -->
         <div class="icon8f"></div>  
-        <!-- Надпис UA на сірому footer -->
-        <div div class="word-26f">UA</div>
+        <!-- Надпис EN на сірому footer -->
+        <div class="word-26f" onmouseover="hoverEffect(true)" onmouseout="hoverEffect(false)" onclick="changeLanguage()">EN</div>
 
 </body>
 </html>
