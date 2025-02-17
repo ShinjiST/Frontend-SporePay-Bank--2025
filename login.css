@@ -1,6 +1,6 @@
 /* Загальний стиль для body */
 body {
-    zoom: 50%;
+    zoom: 60%;
     font-family: 'Ysabeau Infant', sans-serif;
     background-color: #f4f7fc;
     display: flex;
@@ -253,5 +253,6 @@ button:hover {
     opacity: 1; /* Повна непрозорість */
     transform: translateY(0); 
 }
+
 
 
